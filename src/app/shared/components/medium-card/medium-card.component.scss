@@ -1,0 +1,29 @@
+$red: #ff0000;
+
+.medium-card {
+  .medium-card__image {
+    width: 147px;
+    height: 144px;
+  }
+
+  .medium-card__price {
+    .current {
+      font-weight: 700;
+      color: #ff0000;
+      font-size: 1.5rem;
+    }
+
+    .old {
+      text-decoration: line-through;
+      font-size: 1.1rem;
+    }
+
+    .medium-card__price__status {
+      font-size: 1rem;
+    }
+  }
+}
+
+.medium-card--item-unavailable {
+  opacity: .5;
+}

@@ -1,0 +1,36 @@
+<app-header></app-header>
+
+<div class="home d-flex flex-column">
+  <div class="home__localization d-flex align-items-center">
+    <img
+      src="../../../assets/icons/localization.svg"
+      class="ps-3 me-1"
+      alt="Localization icon"
+    />
+    {{ userData.city }} - {{ userData.uf }}
+  </div>
+
+  <div class="row-items d-flex align-items-start ps-2 pe-3">
+    <app-mini-card
+      class="me-4"
+      *ngFor="let data of cardData"
+      [cardData]="data"
+    ></app-mini-card>
+  </div>
+
+  <div class="home__session position-relative">
+    <div class="home__session__title d-flex ps-3">
+      <h2>A partir de R$ {{ sessionValue }}</h2>
+      <img src="/assets/icons/row-right.svg" alt="Row right icon" />
+    </div>
+    <p class="opacity-75 ps-3 mb-2">Frete grátis</p>
+
+    <div class="row-items d-flex align-items-start px-3">
+      <app-medium-card
+        class="me-1"
+        *ngFor="let data of sessionPromotions"
+        [cardData]="data"
+      ></app-medium-card>
+    </div>
+  </div>
+</div>

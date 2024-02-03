@@ -1,0 +1,14 @@
+<div class="medium-card d-flex flex-column" [ngClass]="!cardData.status ? 'medium-card--item-unavailable' : ''">
+  <img
+    class="medium-card__image mb-1 rounded-2"
+    mat-card-image
+    [src]="cardData.image"
+    alt="Destaque"
+  />
+
+  <div class="medium-card__price d-flex align-items-end">
+    <span class="current me-1">R${{ cardData.currentPrice }}</span> 
+    <span class="old opacity-75 mb-1">{{ cardData.price }}</span>
+  </div>
+  <p class="medium-card__price__status">{{ cardData.status ? "Disponível" : "Indisponível" }}</p>
+</div>

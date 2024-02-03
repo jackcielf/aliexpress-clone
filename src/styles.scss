@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+@include mat.core();
+
+$shop-primary: mat.define-palette(mat.$indigo-palette);
+$shop-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$shop-warn: mat.define-palette(mat.$red-palette);
+
+$shop-theme: mat.define-light-theme((
+  color: (
+    primary: $shop-primary,
+    accent: $shop-accent,
+    warn: $shop-warn,
+  )
+));
+
+@include mat.all-component-themes($shop-theme);
+
+html, body { height: 100%; }
+
+* {
+  border: none;
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}

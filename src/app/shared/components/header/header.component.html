@@ -1,0 +1,26 @@
+<header class="header px-3 pt-3 pb-2 d-flex flex-column">
+  <nav class="header__nav d-flex align-items-center justify-content-between">
+    <div class="header__cont-left d-flex align-items-center">
+      <button class="header__bars-icon"></button>
+      <span class="logo">{{ interpriseName }}</span>
+    </div>
+
+    <div class="header__cont-right d-flex align-items-center">
+      <mat-icon
+        class="pointer"
+        matBadge="1"
+        matBadgeColor="warn"
+        aria-hidden="false"
+        (click)="btnShowFavorites()"
+      >
+        favorite
+      </mat-icon>
+    </div>
+  </nav>
+
+  <input
+    class="search py-2 px-3 rounded-5"
+    type="text"
+    [placeholder]="placeholder"
+  />
+</header>
