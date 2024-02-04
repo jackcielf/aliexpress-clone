@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>{{ data.title }}</h2>
+<mat-dialog-content>
+  {{ data.description }}
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button *ngIf="data.confirm" mat-button mat-dialog-close cdkFocusInitial>
+    {{ data.confirm }}
+  </button>
+  <button *ngIf="data.no" (click)="btnClose()" mat-button mat-dialog-close>
+    {{ data.no }}
+  </button>
+</mat-dialog-actions>

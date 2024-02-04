@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,8 @@ import { OfferFirstPurchaseComponent } from './shared/components/offer-first-pur
 import { MatMenuModule } from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider'; 
 import {MatListModule} from '@angular/material/list'; 
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogComponent } from './shared/components/dialog/dialog.component'; 
 
 @NgModule({
   declarations: [
@@ -30,10 +33,12 @@ import {MatListModule} from '@angular/material/list';
     MediumCardComponent,
     BigCardComponent,
     OfferFirstPurchaseComponent,
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
@@ -42,7 +47,8 @@ import {MatListModule} from '@angular/material/list';
     MatCardModule,
     MatMenuModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],

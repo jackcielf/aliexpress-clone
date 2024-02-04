@@ -1,0 +1,107 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Perfume Kaiak da Natura",
+      "image": "https://bit.ly/3OrmlWg",
+      "price": "",
+      "currentPrice": "55.95",
+      "offerFirstPurchase": true,
+      "status": true,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "name": "Perfume Kaiak da Natura",
+      "image": "https://bit.ly/3OrmlWg",
+      "price": "68.89",
+      "currentPrice": "34.40",
+      "offerFirstPurchase": true,
+      "status": true,
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "name": "Perfume Kaiak da Natura",
+      "image": "https://bit.ly/3OrmlWg",
+      "price": "89.80",
+      "currentPrice": "81.95",
+      "offerFirstPurchase": false,
+      "status": true,
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "name": "Perfume Kaiak da Natura",
+      "image": "https://bit.ly/3OrmlWg",
+      "price": "54.99",
+      "currentPrice": "112.95",
+      "offerFirstPurchase": true,
+      "status": true,
+      "userId": 3
+    },
+    {
+      "id": 5,
+      "name": "Perfume Kaiak da Natura",
+      "image": "https://bit.ly/3OrmlWg",
+      "price": "54.99",
+      "currentPrice": "27.95",
+      "offerFirstPurchase": false,
+      "status": true,
+      "userId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "jack@gmail.com",
+      "password": "30je03ek",
+      "name": "Jack",
+      "city": "Paraipaba",
+      "uf": "CE"
+    },
+    {
+      "id": 2,
+      "name": "Jackciel",
+      "email": "jackciel@gmail.com",
+      "password": "dfewr2354",
+      "city": "Caucaia",
+      "uf": "CE"
+    },
+    {
+      "id": 3,
+      "name": "Maria",
+      "email": "maria@gmail.com",
+      "password": "234rwef",
+      "city": "Salvador",
+      "uf": "BA"
+    }
+  ],
+  "suggestions": [
+    {
+      "id": 1,
+      "text": "Do Brasil",
+      "image": "https://bit.ly/3OrmlWg"
+    },
+    {
+      "id": 2,
+      "text": "Frete grátis",
+      "image": "https://bit.ly/3OrmlWg"
+    },
+    {
+      "id": 3,
+      "text": "Compra em grupo",
+      "image": "https://bit.ly/3OrmlWg"
+    },
+    {
+      "id": 4,
+      "text": "Moedas",
+      "image": "https://bit.ly/3OrmlWg"
+    },
+    {
+      "id": 5,
+      "text": "Carrinho",
+      "image": "https://bit.ly/3OrmlWg"
+    }
+  ]
+}
