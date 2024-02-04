@@ -1,7 +1,37 @@
-<header class="header px-3 pt-3 pb-2 d-flex flex-column">
+<header class="header px-3 pt-2 pb-2 d-flex flex-column">
   <nav class="header__nav d-flex align-items-center justify-content-between">
     <div class="header__cont-left d-flex align-items-center">
-      <button class="header__bars-icon"></button>
+      <button class="header__menu-icon d-grid" mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>sell</mat-icon>
+          <span>Produtos</span>
+        </button>
+        <button mat-menu-item disabled>
+          <mat-icon>storefront</mat-icon>
+          <span>Loja virtual</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>account_circle</mat-icon>
+          <span>Meus pedidos</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>ads_click</mat-icon>
+          <span>Promoções</span>
+        </button>
+        <mat-list>
+          <mat-list-item>Configurações</mat-list-item>
+          <mat-divider></mat-divider>
+        </mat-list>
+        <button mat-menu-item>
+          <mat-icon>support_agent</mat-icon>
+          <span>Central de ajuda</span>
+        </button>
+      </mat-menu>
+      
       <span class="logo">{{ interpriseName }}</span>
     </div>
 

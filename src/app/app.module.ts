@@ -9,17 +9,28 @@ import { HeaderComponent } from './shared/components/header/header.component';
 
 // Angular Material
 import { MatButtonModule } from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
-import {MatBadgeModule} from '@angular/material/badge';
-import {MatInputModule} from '@angular/material/input';
-import {MatCardModule} from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
 import { MiniCardComponent } from './shared/components/mini-card/mini-card.component';
 import { MediumCardComponent } from './shared/components/medium-card/medium-card.component';
 import { BigCardComponent } from './shared/components/big-card/big-card.component';
 import { OfferFirstPurchaseComponent } from './shared/components/offer-first-purchase/offer-first-purchase.component';
+import { MatMenuModule } from '@angular/material/menu';
+import {MatDividerModule} from '@angular/material/divider'; 
+import {MatListModule} from '@angular/material/list'; 
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, MiniCardComponent, MediumCardComponent, BigCardComponent, OfferFirstPurchaseComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    HeaderComponent,
+    MiniCardComponent,
+    MediumCardComponent,
+    BigCardComponent,
+    OfferFirstPurchaseComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -28,7 +39,10 @@ import { OfferFirstPurchaseComponent } from './shared/components/offer-first-pur
     MatIconModule,
     MatBadgeModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule,
+    MatDividerModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent],
