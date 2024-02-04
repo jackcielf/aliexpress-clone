@@ -1,0 +1,18 @@
+<div class="big-card d-flex flex-column" [ngClass]="!cardData.status ? 'card--item-unavailable' : ''">
+  <img
+    class="big-card__image rounded-2"
+    mat-card-image
+    [src]="cardData.image"
+    alt="Destaque"
+  />
+
+  <div class="big-card__price d-flex align-items-end">
+    <span class="current me-1">R${{ cardData.currentPrice }}</span> 
+    <span class="old opacity-75 mb-1">{{ cardData.price }}</span>
+  </div>
+
+  <app-offer-first-purchase *ngIf="cardData.offerFirstPurchase"></app-offer-first-purchase>
+
+  <p class="big-card__status m-0">{{ cardData.status ? "Disponível" : "Indisponível" }}</p>
+  <p class="big-card__name">{{ cardData.name }}</p>
+</div>

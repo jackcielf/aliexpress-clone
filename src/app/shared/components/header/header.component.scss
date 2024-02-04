@@ -40,8 +40,23 @@ $light: #E6E6E6;
       column-gap: 0.5rem;
     }
   }
-  
-  .search {
-    background-color: $light;
+
+  .header__field {
+    .header__field__search {
+      background-color: $light;
+    }
+    
+    .header__field__button {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      right: .7rem;
+      transform: translateY(-50%);
+      background: url(/assets/icons/search.svg) no-repeat;
+      background-position: 50%;
+      cursor: pointer;
+    }
   }
+  
 }

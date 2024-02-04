@@ -15,15 +15,11 @@ $red: #ff0000;
 
     .old {
       text-decoration: line-through;
-      font-size: 1.1rem;
-    }
-
-    .medium-card__price__status {
       font-size: 1rem;
     }
   }
-}
 
-.medium-card--item-unavailable {
-  opacity: .5;
+  .medium-card__status {
+    font-size: 1rem;
+  }
 }

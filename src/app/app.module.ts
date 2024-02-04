@@ -15,9 +15,11 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import { MiniCardComponent } from './shared/components/mini-card/mini-card.component';
 import { MediumCardComponent } from './shared/components/medium-card/medium-card.component';
+import { BigCardComponent } from './shared/components/big-card/big-card.component';
+import { OfferFirstPurchaseComponent } from './shared/components/offer-first-purchase/offer-first-purchase.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, MiniCardComponent, MediumCardComponent],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, MiniCardComponent, MediumCardComponent, BigCardComponent, OfferFirstPurchaseComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

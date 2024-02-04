@@ -18,9 +18,12 @@
     </div>
   </nav>
 
-  <input
-    class="search py-2 px-3 rounded-5"
-    type="text"
-    [placeholder]="placeholder"
-  />
+  <div class="header__field position-relative">
+    <input
+      class="header__field__search w-100 py-2 px-3 rounded-5"
+      type="text"
+      [placeholder]="placeholder"
+    />
+    <div class="header__field__button" (click)="btnSearchProduct()"></div>
+  </div>
 </header>

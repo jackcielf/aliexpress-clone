@@ -16,4 +16,8 @@ export class HeaderComponent implements OnInit {
   public btnShowFavorites() {
     console.log("Mostrar favoritos");
   }
+
+  public btnSearchProduct() {
+    console.log("Pesquisar produto");
+  }
 }
