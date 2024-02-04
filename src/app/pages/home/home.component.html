@@ -7,13 +7,13 @@
       class="ps-3 me-1"
       alt="Localization icon"
     />
-    {{ userData.city }} - {{ userData.uf }}
+    {{ user.city }} - {{ user.uf }}
   </div>
 
   <div class="row-items d-flex align-items-start justify-content-between ps-2">
     <app-mini-card
       class="me-4"
-      *ngFor="let data of cardData"
+      *ngFor="let data of suggestionsData"
       [cardData]="data"
     ></app-mini-card>
   </div>
@@ -40,7 +40,7 @@
     <div class="column-items">
       <app-big-card
         class="me-1"
-        *ngFor="let data of products"
+        *ngFor="let data of productsData"
         [cardData]="data"
       ></app-big-card>
     </div>

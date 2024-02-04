@@ -8,25 +8,9 @@ $light: #E6E6E6;
   .header__nav {
     .header__cont-left {
       column-gap: 0.5rem;
-
-      .header__bars-icon {
-        width: 22px;
-        height: 17px;
-        background-color: transparent;
-        border-top: 2px solid $black;
-        border-bottom: 2px solid $black;
-        position: relative;
-
-        &::after {
-          content: "";
-          width: 100%;
-          height: 2px;
-          position: absolute;
-          left: 0;
-          top: 50%;
-          transform: translateY(-50%);
-          background-color: $black;
-        }
+      
+      .header__menu-icon {
+        margin: 0 -10px;
       }
 
       span {
@@ -58,5 +42,4 @@ $light: #E6E6E6;
       cursor: pointer;
     }
   }
-  
 }
