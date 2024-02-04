@@ -7,17 +7,13 @@
   }
 
   .home__session {
+    h2 {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    
     .home__session__title {
       column-gap: .5rem;
-
-      h2 {
-        font-weight: 600;
-        font-size: 1.1rem;
-      }
     }
   }
-}
-
-.row-items {
-  overflow-x: scroll;
 }

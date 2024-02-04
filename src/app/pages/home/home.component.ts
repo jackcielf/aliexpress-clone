@@ -36,31 +36,78 @@ export class HomeComponent {
     },
   ];
 
-  sessionValue = "12.99";
+  sessionValue = '12.99';
 
   sessionPromotions = [
     {
-      image: "https://bit.ly/3OrmlWg",
+      name: 'Perfume Kaiak da Natura',
+      image: 'https://bit.ly/3OrmlWg',
       price: '77.89',
       currentPrice: '15.95',
       status: true,
     },
     {
-      image: "https://bit.ly/3OrmlWg",
+      name: 'Perfume Kaiak da Natura',
+      image: 'https://bit.ly/3OrmlWg',
       price: '68.89',
       currentPrice: '15.95',
       status: false,
     },
     {
-      image: "https://bit.ly/3OrmlWg",
+      name: 'Perfume Kaiak da Natura',
+      image: 'https://bit.ly/3OrmlWg',
       price: '89.80',
       currentPrice: '15.95',
       status: true,
     },
     {
-      image: "https://bit.ly/3OrmlWg",
+      name: 'Perfume Kaiak da Natura',
+      image: 'https://bit.ly/3OrmlWg',
       price: '54.99',
       currentPrice: '15.95',
+      status: true,
+    },
+  ];
+
+  products = [
+    {
+      name: 'Perfume Kaiak da Natura',
+      image: 'https://bit.ly/3OrmlWg',
+      price: '',
+      currentPrice: '55.95',
+      offerFirstPurchase: true,
+      status: true,
+    },
+    {
+      name: 'Perfume Kaiak da Natura',
+      image: 'https://bit.ly/3OrmlWg',
+      price: '68.89',
+      currentPrice: '34.40',
+      offerFirstPurchase: false,
+      status: false,
+    },
+    {
+      name: 'Perfume Kaiak da Natura',
+      image: 'https://bit.ly/3OrmlWg',
+      price: '89.80',
+      currentPrice: '81.95',
+      offerFirstPurchase: false,
+      status: true,
+    },
+    {
+      name: 'Perfume Kaiak da Natura',
+      image: 'https://bit.ly/3OrmlWg',
+      price: '54.99',
+      currentPrice: '112.95',
+      offerFirstPurchase: true,
+      status: false,
+    },
+    {
+      name: 'Perfume Kaiak da Natura',
+      image: 'https://bit.ly/3OrmlWg',
+      price: '54.99',
+      currentPrice: '27.95',
+      offerFirstPurchase: false,
       status: true,
     },
   ];

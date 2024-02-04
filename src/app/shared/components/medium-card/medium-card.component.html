@@ -1,6 +1,6 @@
-<div class="medium-card d-flex flex-column" [ngClass]="!cardData.status ? 'medium-card--item-unavailable' : ''">
+<div class="medium-card d-flex flex-column" [ngClass]="!cardData.status ? 'card--item-unavailable' : ''">
   <img
-    class="medium-card__image mb-1 rounded-2"
+    class="medium-card__image rounded-2"
     mat-card-image
     [src]="cardData.image"
     alt="Destaque"
@@ -10,5 +10,5 @@
     <span class="current me-1">R${{ cardData.currentPrice }}</span> 
     <span class="old opacity-75 mb-1">{{ cardData.price }}</span>
   </div>
-  <p class="medium-card__price__status">{{ cardData.status ? "Disponível" : "Indisponível" }}</p>
+  <span class="medium-card__status">{{ cardData.status ? "Disponível" : "Indisponível" }}</span>
 </div>

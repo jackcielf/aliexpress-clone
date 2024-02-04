@@ -33,3 +33,16 @@ input {
 button {
   cursor: pointer;
 }
+
+.row-items {
+  overflow-x: scroll;
+}
+
+.column-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card--item-unavailable {
+  opacity: .5;
+}

@@ -10,7 +10,7 @@
     {{ userData.city }} - {{ userData.uf }}
   </div>
 
-  <div class="row-items d-flex align-items-start ps-2 pe-3">
+  <div class="row-items d-flex align-items-start justify-content-between ps-2">
     <app-mini-card
       class="me-4"
       *ngFor="let data of cardData"
@@ -18,7 +18,7 @@
     ></app-mini-card>
   </div>
 
-  <div class="home__session position-relative">
+  <div class="home__session">
     <div class="home__session__title d-flex ps-3">
       <h2>A partir de R$ {{ sessionValue }}</h2>
       <img src="/assets/icons/row-right.svg" alt="Row right icon" />
@@ -31,6 +31,18 @@
         *ngFor="let data of sessionPromotions"
         [cardData]="data"
       ></app-medium-card>
+    </div>
+  </div>
+
+  <div class="home__session px-3">
+    <h2>Você vai amar</h2>
+
+    <div class="column-items">
+      <app-big-card
+        class="me-1"
+        *ngFor="let data of products"
+        [cardData]="data"
+      ></app-big-card>
     </div>
   </div>
 </div>
