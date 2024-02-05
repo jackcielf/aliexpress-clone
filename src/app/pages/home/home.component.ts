@@ -13,14 +13,10 @@ import { User } from 'src/app/shared/interfaces/user';
 })
 export class HomeComponent implements OnInit {
   dialogRef!: MatDialogRef<DialogComponent>;
-  dialogTimeOpen = '300ms';
-  dialogTimeClose = '300ms';
 
   suggestionsData = [];
   productsData: Product[] = [];
   userData: User[] = [];
-
-  sessionValue = '12.99';
 
   user = {
     id: 1,
@@ -67,25 +63,22 @@ export class HomeComponent implements OnInit {
     this.getSuggestions();
   }
 
-  openDialog(enterAnimationDuration: string, exitAnimationDuration: string) {
-    const OPTIONS = {
-      enterAnimationDuration,
-      exitAnimationDuration,
-      width: '80%',
-      maxWidth: '350px',
-      data: {
-        title: 'Ops...',
-        description: 'Erro ao requisitar dados',
-        confirm: 'Ok',
-      },
-    };
-
-    const dialogRef = this.dialog.open(DialogComponent, OPTIONS);
+  openDialog(options: any) {
+    const dialogRef = this.dialog.open(DialogComponent, options);
 
     return dialogRef;
   }
 
   public getProducts() {
+    const OPTIONS = {
+      width: '250px',
+      data: {
+        title: 'Ops...',
+        description: 'Erro ao obter produtos',
+        confirm: 'Ok',
+      },
+    };
+
     this.homeService
       .getProducts()
       .pipe(take(1))
@@ -94,10 +87,7 @@ export class HomeComponent implements OnInit {
           this.productsData = dataProduct;
         },
         error: (err) => {
-          this.dialogRef = this.openDialog(
-            this.dialogTimeOpen,
-            this.dialogTimeClose
-          );
+          this.dialogRef = this.openDialog(OPTIONS);
 
           // Executa uma função ao fechar o modal
           this.dialogRef.afterClosed().subscribe((result) => {});
@@ -106,6 +96,15 @@ export class HomeComponent implements OnInit {
   }
 
   public getSuggestions() {
+    const OPTIONS = {
+      width: '250px',
+      data: {
+        title: 'Ops...',
+        description: 'Erro ao obter destaques',
+        confirm: 'Ok',
+      },
+    };
+
     this.homeService
       .getSuggestions()
       .pipe(take(1))
@@ -114,10 +113,7 @@ export class HomeComponent implements OnInit {
           this.suggestionsData = dataSuggestion;
         },
         error: (error) => {
-          this.dialogRef = this.openDialog(
-            this.dialogTimeOpen,
-            this.dialogTimeClose
-          );
+          this.dialogRef = this.openDialog(OPTIONS);
 
           // Executa uma função ao fechar o modal
           this.dialogRef.afterClosed().subscribe((result) => {});

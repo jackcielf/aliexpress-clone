@@ -1,6 +1,6 @@
-import { Component, EventEmitter, Inject, Input, Output } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { Dialog } from '../../interfaces/dialog';
+import { Message } from '../../interfaces/message';
 
 @Component({
   selector: 'app-dialog',
@@ -8,11 +8,11 @@ import { Dialog } from '../../interfaces/dialog';
   styleUrls: ['./dialog.component.scss'],
 })
 export class DialogComponent {
-  dialogData: Dialog[] = [];
+  dialogData: Message[] = [];
 
   constructor(
     public dialogRef: MatDialogRef<DialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: Dialog
+    @Inject(MAT_DIALOG_DATA) public data: Message
   ) {}
 
   public btnClose() {
