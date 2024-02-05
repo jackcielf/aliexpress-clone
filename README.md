@@ -1,6 +1,9 @@
-# Shop
+# Project image - Shop
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+![Design preview](./src/assets/express-page.png)
+
+## Backend starter
+go to the 'backend' folder and run the command: <strong>npm run start</strong>
 
 ## Development server
 
