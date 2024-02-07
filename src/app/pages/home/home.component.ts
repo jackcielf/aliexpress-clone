@@ -1,5 +1,5 @@
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { HomeService } from './../../shared/services/home.service';
+import { HomeService } from './../../shared/services/home/home.service';
 import { Component, OnInit } from '@angular/core';
 import { take } from 'rxjs';
 import { DialogComponent } from 'src/app/shared/components/dialog/dialog.component';
